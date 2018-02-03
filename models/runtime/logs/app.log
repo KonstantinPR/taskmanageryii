@@ -1,0 +1,1551 @@
+2017-11-12 16:50:29 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "create/migrate". in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('create/migrate', Array)
+#1 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('create/migrate', Array)
+#2 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 D:\OSPanel\WebServer\domains\taskmanageryii\yii(20): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "create/migrate". in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('create/migrate', Array)
+#1 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 D:\OSPanel\WebServer\domains\taskmanageryii\yii(20): yii\base\Application->run()
+#3 {main}
+2017-11-12 16:50:29 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '115x10000 (115x27)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\Kostya\\AppData\\Roaming'
+    'CLASSPATH' => '.;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'KOSTYA-ой'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x000D265A'
+    'ConEmuBaseDir' => 'D:\\ospanel\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '161206'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'D:\\ospanel\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x007C1792'
+    'ConEmuDrive' => 'D:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x006833CE'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '252340'
+    'ConEmuPrompt0' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S'
+    'ConEmuPrompt1' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m'
+    'ConEmuPrompt2' => '$_$E[90m$G'
+    'ConEmuPrompt3' => '$E[m$S$E]9;12$E\\'
+    'ConEmuServerPID' => '115432'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'd:\\ospanel'
+    'ConEmuWorkDrive' => 'd:'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'd:\\ospanel'
+    'HOMEDRIVE' => 'd:'
+    'HOMEPATH' => '\\ospanel'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_101'
+    'LOCALAPPDATA' => 'C:\\Users\\Kostya\\AppData\\Local'
+    'LOGONSERVER' => '\\\\KOSTYA-ой'
+    'MAGICK_CODER_FILTER_PATH' => 'd:\\ospanel\\modules\\imagemagick\\modules\\filters'
+    'MAGICK_CODER_MODULE_PATH' => 'd:\\ospanel\\modules\\imagemagick\\modules\\coders'
+    'MAGICK_CONFIGURE_PATH' => 'd:\\ospanel\\modules\\imagemagick'
+    'MAGICK_HOME' => 'd:\\ospanel\\modules\\imagemagick'
+    'MAGICK_TEMPORARY_PATH' => 'd:\\ospanel\\userdata\\temp'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\Kostya\\OneDrive'
+    'OPENSSL_CONF' => 'd:\\ospanel\\modules\\http\\Apache-PHP-7\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\ospanel\\modules\\conemu\\ConEmu\\Scripts;D:\\ospanel\\modules\\conemu;D:\\ospanel\\modules\\conemu\\ConEmu;d:\\ospanel\\modules\\php\\PHP-7.0\\ext;d:\\ospanel\\modules\\php\\PHP-7.0\\pear;d:\\ospanel\\modules\\php\\PHP-7.0\\pear\\bin;d:\\ospanel\\modules\\php\\PHP-7.0;d:\\ospanel\\modules\\imagemagick;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MySQL-5.6\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\php.exe'
+    'PHPDIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\'
+    'PHPRC' => 'd:\\ospanel\\modules\\php\\PHP-7.0'
+    'PHP_BIN' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\php.exe'
+    'PHP_BINARY' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\php.exe'
+    'PHP_BINDIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\'
+    'PHP_COMMAND' => 'php.exe'
+    'PHP_DIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\'
+    'PHP_INI' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\PEAR\\tests'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$G$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'd:\\ospanel\\userdata\\temp'
+    'TERM' => 'msys'
+    'TMP' => 'd:\\ospanel\\userdata\\temp'
+    'USERDOMAIN' => 'Kostya-ой'
+    'USERDOMAIN_ROAMINGPROFILE' => 'Kostya-ой'
+    'USERNAME' => 'Kostya'
+    'USERPROFILE' => 'C:\\Users\\Kostya'
+    'windir' => 'C:\\WINDOWS'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'd:\\OSPanel\\WebServer\\domains\\taskmanageryii\\'
+    'PHP_SELF' => 'd:\\OSPanel\\WebServer\\domains\\taskmanageryii\\yii'
+    'SCRIPT_NAME' => 'd:\\OSPanel\\WebServer\\domains\\taskmanageryii\\yii'
+    'SCRIPT_FILENAME' => 'd:\\OSPanel\\WebServer\\domains\\taskmanageryii\\yii'
+    'PATH_TRANSLATED' => 'd:\\OSPanel\\WebServer\\domains\\taskmanageryii\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1510494629.4816
+    'REQUEST_TIME' => 1510494629
+    'argv' => [
+        0 => 'd:\\OSPanel\\WebServer\\domains\\taskmanageryii\\yii'
+        1 => 'create/migrate'
+        2 => 'create_tasks_table'
+    ]
+    'argc' => 3
+]
+2017-11-12 16:50:46 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "create\migrate". in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('create\\migrate', Array)
+#1 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('create\\migrate', Array)
+#2 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 D:\OSPanel\WebServer\domains\taskmanageryii\yii(20): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "create\migrate". in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('create\\migrate', Array)
+#1 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 D:\OSPanel\WebServer\domains\taskmanageryii\yii(20): yii\base\Application->run()
+#3 {main}
+2017-11-12 16:50:46 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '115x10000 (115x27)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\Kostya\\AppData\\Roaming'
+    'CLASSPATH' => '.;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'KOSTYA-ой'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x000D265A'
+    'ConEmuBaseDir' => 'D:\\ospanel\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '161206'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'D:\\ospanel\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x007C1792'
+    'ConEmuDrive' => 'D:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x006833CE'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '252340'
+    'ConEmuPrompt0' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S'
+    'ConEmuPrompt1' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m'
+    'ConEmuPrompt2' => '$_$E[90m$G'
+    'ConEmuPrompt3' => '$E[m$S$E]9;12$E\\'
+    'ConEmuServerPID' => '115432'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'd:\\ospanel'
+    'ConEmuWorkDrive' => 'd:'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'd:\\ospanel'
+    'HOMEDRIVE' => 'd:'
+    'HOMEPATH' => '\\ospanel'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_101'
+    'LOCALAPPDATA' => 'C:\\Users\\Kostya\\AppData\\Local'
+    'LOGONSERVER' => '\\\\KOSTYA-ой'
+    'MAGICK_CODER_FILTER_PATH' => 'd:\\ospanel\\modules\\imagemagick\\modules\\filters'
+    'MAGICK_CODER_MODULE_PATH' => 'd:\\ospanel\\modules\\imagemagick\\modules\\coders'
+    'MAGICK_CONFIGURE_PATH' => 'd:\\ospanel\\modules\\imagemagick'
+    'MAGICK_HOME' => 'd:\\ospanel\\modules\\imagemagick'
+    'MAGICK_TEMPORARY_PATH' => 'd:\\ospanel\\userdata\\temp'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\Kostya\\OneDrive'
+    'OPENSSL_CONF' => 'd:\\ospanel\\modules\\http\\Apache-PHP-7\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\ospanel\\modules\\conemu\\ConEmu\\Scripts;D:\\ospanel\\modules\\conemu;D:\\ospanel\\modules\\conemu\\ConEmu;d:\\ospanel\\modules\\php\\PHP-7.0\\ext;d:\\ospanel\\modules\\php\\PHP-7.0\\pear;d:\\ospanel\\modules\\php\\PHP-7.0\\pear\\bin;d:\\ospanel\\modules\\php\\PHP-7.0;d:\\ospanel\\modules\\imagemagick;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MySQL-5.6\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\php.exe'
+    'PHPDIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\'
+    'PHPRC' => 'd:\\ospanel\\modules\\php\\PHP-7.0'
+    'PHP_BIN' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\php.exe'
+    'PHP_BINARY' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\php.exe'
+    'PHP_BINDIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\'
+    'PHP_COMMAND' => 'php.exe'
+    'PHP_DIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\'
+    'PHP_INI' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\PEAR\\tests'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$G$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'd:\\ospanel\\userdata\\temp'
+    'TERM' => 'msys'
+    'TMP' => 'd:\\ospanel\\userdata\\temp'
+    'USERDOMAIN' => 'Kostya-ой'
+    'USERDOMAIN_ROAMINGPROFILE' => 'Kostya-ой'
+    'USERNAME' => 'Kostya'
+    'USERPROFILE' => 'C:\\Users\\Kostya'
+    'windir' => 'C:\\WINDOWS'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'd:\\OSPanel\\WebServer\\domains\\taskmanageryii\\'
+    'PHP_SELF' => 'd:\\OSPanel\\WebServer\\domains\\taskmanageryii\\yii'
+    'SCRIPT_NAME' => 'd:\\OSPanel\\WebServer\\domains\\taskmanageryii\\yii'
+    'SCRIPT_FILENAME' => 'd:\\OSPanel\\WebServer\\domains\\taskmanageryii\\yii'
+    'PATH_TRANSLATED' => 'd:\\OSPanel\\WebServer\\domains\\taskmanageryii\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1510494646.0712
+    'REQUEST_TIME' => 1510494646
+    'argv' => [
+        0 => 'd:\\OSPanel\\WebServer\\domains\\taskmanageryii\\yii'
+        1 => 'create\\migrate'
+        2 => 'create_tasks_table'
+    ]
+    'argc' => 3
+]
+2017-11-12 16:51:06 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'taskmanageryii' in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\db\Connection.php:660
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\db\Connection.php(660): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\db\Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\db\Connection.php(943): yii\db\Connection->open()
+#3 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\db\Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\db\Command.php(243): yii\db\Connection->getSlavePdo()
+#5 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\db\Command.php(1062): yii\db\Command->prepare(true)
+#6 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\db\Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#8 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\db\mysql\Schema.php(111): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\db\Schema.php(660): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\db\Schema.php(173): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\console\controllers\MigrateController.php(334): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(631): yii\console\controllers\MigrateController->getMigrationNameLimit()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionCreate('create_tasks_ta...')
+#14 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\console\Controller.php(135): yii\base\Controller->runAction('create', Array)
+#17 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('create', Array)
+#18 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate/create', Array)
+#19 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate/create', Array)
+#20 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 D:\OSPanel\WebServer\domains\taskmanageryii\yii(20): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'taskmanageryii' in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\db\Connection.php:597
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\db\Connection.php(943): yii\db\Connection->open()
+#1 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\db\Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\db\Command.php(243): yii\db\Connection->getSlavePdo()
+#3 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\db\Command.php(1062): yii\db\Command->prepare(true)
+#4 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\db\Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#6 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\db\mysql\Schema.php(111): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\db\Schema.php(660): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\db\Schema.php(173): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\console\controllers\MigrateController.php(334): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(631): yii\console\controllers\MigrateController->getMigrationNameLimit()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionCreate('create_tasks_ta...')
+#12 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#14 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\console\Controller.php(135): yii\base\Controller->runAction('create', Array)
+#15 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('create', Array)
+#16 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate/create', Array)
+#17 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate/create', Array)
+#18 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 D:\OSPanel\WebServer\domains\taskmanageryii\yii(20): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2017-11-12 16:51:06 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '115x10000 (115x27)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\Kostya\\AppData\\Roaming'
+    'CLASSPATH' => '.;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'KOSTYA-ой'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x000D265A'
+    'ConEmuBaseDir' => 'D:\\ospanel\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '161206'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'D:\\ospanel\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x007C1792'
+    'ConEmuDrive' => 'D:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x006833CE'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '252340'
+    'ConEmuPrompt0' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S'
+    'ConEmuPrompt1' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m'
+    'ConEmuPrompt2' => '$_$E[90m$G'
+    'ConEmuPrompt3' => '$E[m$S$E]9;12$E\\'
+    'ConEmuServerPID' => '115432'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'd:\\ospanel'
+    'ConEmuWorkDrive' => 'd:'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'd:\\ospanel'
+    'HOMEDRIVE' => 'd:'
+    'HOMEPATH' => '\\ospanel'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_101'
+    'LOCALAPPDATA' => 'C:\\Users\\Kostya\\AppData\\Local'
+    'LOGONSERVER' => '\\\\KOSTYA-ой'
+    'MAGICK_CODER_FILTER_PATH' => 'd:\\ospanel\\modules\\imagemagick\\modules\\filters'
+    'MAGICK_CODER_MODULE_PATH' => 'd:\\ospanel\\modules\\imagemagick\\modules\\coders'
+    'MAGICK_CONFIGURE_PATH' => 'd:\\ospanel\\modules\\imagemagick'
+    'MAGICK_HOME' => 'd:\\ospanel\\modules\\imagemagick'
+    'MAGICK_TEMPORARY_PATH' => 'd:\\ospanel\\userdata\\temp'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\Kostya\\OneDrive'
+    'OPENSSL_CONF' => 'd:\\ospanel\\modules\\http\\Apache-PHP-7\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\ospanel\\modules\\conemu\\ConEmu\\Scripts;D:\\ospanel\\modules\\conemu;D:\\ospanel\\modules\\conemu\\ConEmu;d:\\ospanel\\modules\\php\\PHP-7.0\\ext;d:\\ospanel\\modules\\php\\PHP-7.0\\pear;d:\\ospanel\\modules\\php\\PHP-7.0\\pear\\bin;d:\\ospanel\\modules\\php\\PHP-7.0;d:\\ospanel\\modules\\imagemagick;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MySQL-5.6\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\php.exe'
+    'PHPDIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\'
+    'PHPRC' => 'd:\\ospanel\\modules\\php\\PHP-7.0'
+    'PHP_BIN' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\php.exe'
+    'PHP_BINARY' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\php.exe'
+    'PHP_BINDIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\'
+    'PHP_COMMAND' => 'php.exe'
+    'PHP_DIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\'
+    'PHP_INI' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\PEAR\\tests'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$G$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'd:\\ospanel\\userdata\\temp'
+    'TERM' => 'msys'
+    'TMP' => 'd:\\ospanel\\userdata\\temp'
+    'USERDOMAIN' => 'Kostya-ой'
+    'USERDOMAIN_ROAMINGPROFILE' => 'Kostya-ой'
+    'USERNAME' => 'Kostya'
+    'USERPROFILE' => 'C:\\Users\\Kostya'
+    'windir' => 'C:\\WINDOWS'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'd:\\OSPanel\\WebServer\\domains\\taskmanageryii\\'
+    'PHP_SELF' => 'd:\\OSPanel\\WebServer\\domains\\taskmanageryii\\yii'
+    'SCRIPT_NAME' => 'd:\\OSPanel\\WebServer\\domains\\taskmanageryii\\yii'
+    'SCRIPT_FILENAME' => 'd:\\OSPanel\\WebServer\\domains\\taskmanageryii\\yii'
+    'PATH_TRANSLATED' => 'd:\\OSPanel\\WebServer\\domains\\taskmanageryii\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1510494666.27
+    'REQUEST_TIME' => 1510494666
+    'argv' => [
+        0 => 'd:\\OSPanel\\WebServer\\domains\\taskmanageryii\\yii'
+        1 => 'migrate/create'
+        2 => 'create_tasks_table'
+    ]
+    'argc' => 3
+]
+2017-11-12 16:58:10 [-][-][-][error][yii\db\Exception] yii\base\ErrorException: PDOStatement::execute(): MySQL server has gone away in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\db\Command.php:994
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'PDOStatement::e...', 'D:\\OSPanel\\WebS...', 994, Array)
+#1 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\db\Command.php(994): PDOStatement->execute()
+#2 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\db\Migration.php(299): yii\db\Command->execute()
+#3 D:\OSPanel\WebServer\domains\taskmanageryii\migrations\m171112_135237_create_tasks_table.php(18): yii\db\Migration->createTable('tasks', Array)
+#4 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(725): m171112_135237_create_tasks_table->up()
+#5 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m171112_135237_...')
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#7 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\console\Controller.php(135): yii\base\Controller->runAction('', Array)
+#10 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#11 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#12 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#13 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 D:\OSPanel\WebServer\domains\taskmanageryii\yii(20): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: PDOStatement::execute(): MySQL server has gone away
+The SQL being executed was: CREATE TABLE `tasks` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`description` varchar(255),
+	`title` varchar(255)
+) in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\db\Schema.php:594
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\db\Command.php(1004): yii\db\Schema->convertException(Object(yii\base\ErrorException), 'CREATE TABLE `t...')
+#1 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\db\Migration.php(299): yii\db\Command->execute()
+#2 D:\OSPanel\WebServer\domains\taskmanageryii\migrations\m171112_135237_create_tasks_table.php(18): yii\db\Migration->createTable('tasks', Array)
+#3 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(725): m171112_135237_create_tasks_table->up()
+#4 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m171112_135237_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\console\Controller.php(135): yii\base\Controller->runAction('', Array)
+#9 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#10 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#11 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#12 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 D:\OSPanel\WebServer\domains\taskmanageryii\yii(20): yii\base\Application->run()
+#14 {main}
+Additional Information:
+
+2017-11-12 16:55:21 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '115x10000 (115x27)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\Kostya\\AppData\\Roaming'
+    'CLASSPATH' => '.;'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'KOSTYA-ой'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x000D265A'
+    'ConEmuBaseDir' => 'D:\\ospanel\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '161206'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'D:\\ospanel\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x007C1792'
+    'ConEmuDrive' => 'D:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x006833CE'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '252340'
+    'ConEmuPrompt0' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S'
+    'ConEmuPrompt1' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m'
+    'ConEmuPrompt2' => '$_$E[90m$G'
+    'ConEmuPrompt3' => '$E[m$S$E]9;12$E\\'
+    'ConEmuServerPID' => '115432'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'd:\\ospanel'
+    'ConEmuWorkDrive' => 'd:'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'd:\\ospanel'
+    'HOMEDRIVE' => 'd:'
+    'HOMEPATH' => '\\ospanel'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_101'
+    'LOCALAPPDATA' => 'C:\\Users\\Kostya\\AppData\\Local'
+    'LOGONSERVER' => '\\\\KOSTYA-ой'
+    'MAGICK_CODER_FILTER_PATH' => 'd:\\ospanel\\modules\\imagemagick\\modules\\filters'
+    'MAGICK_CODER_MODULE_PATH' => 'd:\\ospanel\\modules\\imagemagick\\modules\\coders'
+    'MAGICK_CONFIGURE_PATH' => 'd:\\ospanel\\modules\\imagemagick'
+    'MAGICK_HOME' => 'd:\\ospanel\\modules\\imagemagick'
+    'MAGICK_TEMPORARY_PATH' => 'd:\\ospanel\\userdata\\temp'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\Kostya\\OneDrive'
+    'OPENSSL_CONF' => 'd:\\ospanel\\modules\\http\\Apache-PHP-7\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\ospanel\\modules\\conemu\\ConEmu\\Scripts;D:\\ospanel\\modules\\conemu;D:\\ospanel\\modules\\conemu\\ConEmu;d:\\ospanel\\modules\\php\\PHP-7.0\\ext;d:\\ospanel\\modules\\php\\PHP-7.0\\pear;d:\\ospanel\\modules\\php\\PHP-7.0\\pear\\bin;d:\\ospanel\\modules\\php\\PHP-7.0;d:\\ospanel\\modules\\imagemagick;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MySQL-5.6\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\php.exe'
+    'PHPDIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\'
+    'PHPRC' => 'd:\\ospanel\\modules\\php\\PHP-7.0'
+    'PHP_BIN' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\php.exe'
+    'PHP_BINARY' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\php.exe'
+    'PHP_BINDIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\'
+    'PHP_COMMAND' => 'php.exe'
+    'PHP_DIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\'
+    'PHP_INI' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'd:\\ospanel\\modules\\php\\PHP-7.0\\PEAR\\tests'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$G$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'd:\\ospanel\\userdata\\temp'
+    'TERM' => 'msys'
+    'TMP' => 'd:\\ospanel\\userdata\\temp'
+    'USERDOMAIN' => 'Kostya-ой'
+    'USERDOMAIN_ROAMINGPROFILE' => 'Kostya-ой'
+    'USERNAME' => 'Kostya'
+    'USERPROFILE' => 'C:\\Users\\Kostya'
+    'windir' => 'C:\\WINDOWS'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'd:\\OSPanel\\WebServer\\domains\\taskmanageryii\\'
+    'PHP_SELF' => 'd:\\OSPanel\\WebServer\\domains\\taskmanageryii\\yii'
+    'SCRIPT_NAME' => 'd:\\OSPanel\\WebServer\\domains\\taskmanageryii\\yii'
+    'SCRIPT_FILENAME' => 'd:\\OSPanel\\WebServer\\domains\\taskmanageryii\\yii'
+    'PATH_TRANSLATED' => 'd:\\OSPanel\\WebServer\\domains\\taskmanageryii\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1510494921.3001
+    'REQUEST_TIME' => 1510494921
+    'argv' => [
+        0 => 'd:\\OSPanel\\WebServer\\domains\\taskmanageryii\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2017-11-12 17:15:04 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: task/view in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#1 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('task/view', Array)
+#2 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\OSPanel\WebServer\domains\taskmanageryii\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OSPanel\WebServer\domains\taskmanageryii\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-11-12 17:15:04 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][info][application] $_COOKIE = [
+    'PHPSESSID' => 'oo6kcpgtjgnbcucjted5hj3ijmi7on5o'
+    '_csrf' => '0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'euxusin'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'taskmanageryii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=oo6kcpgtjgnbcucjted5hj3ijmi7on5o; _csrf=0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP-7.1\\ext;d:\\ospanel\\modules\\php\\PHP-7.1\\pear;d:\\ospanel\\modules\\php\\PHP-7.1\\pear\\bin;d:\\ospanel\\modules\\php\\PHP-7.1;d:\\ospanel\\modules\\imagemagick;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MySQL-5.6\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskmanageryii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web/index.php'
+    'REMOTE_PORT' => '8617'
+    'REDIRECT_URL' => '/task/view'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/task/view'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1510496104.664
+    'REQUEST_TIME' => 1510496104
+    'argv' => []
+    'argc' => 0
+]
+2017-11-12 17:16:16 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Please specify the "model" property. in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\widgets\DetailView.php:131
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\BaseObject.php(108): yii\widgets\DetailView->init()
+#1 [internal function]: yii\base\BaseObject->__construct(Array)
+#2 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\di\Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#3 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#4 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#5 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Widget.php(137): yii\BaseYii::createObject(Array)
+#6 D:\OSPanel\WebServer\domains\taskmanageryii\views\task\index.php(29): yii\base\Widget::widget(Array)
+#7 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\View.php(332): require('D:\\OSPanel\\WebS...')
+#8 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\OSPanel\\WebS...', Array)
+#9 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\OSPanel\\WebS...', Array, Object(app\controllers\TaskController))
+#10 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\TaskController))
+#11 D:\OSPanel\WebServer\domains\taskmanageryii\controllers\TaskController.php(9): yii\base\Controller->render('index')
+#12 [internal function]: app\controllers\TaskController->actionIndex()
+#13 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#16 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('task', Array)
+#17 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 D:\OSPanel\WebServer\domains\taskmanageryii\web\index.php(12): yii\base\Application->run()
+#19 {main}
+2017-11-12 17:16:16 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][info][application] $_COOKIE = [
+    'PHPSESSID' => 'oo6kcpgtjgnbcucjted5hj3ijmi7on5o'
+    '_csrf' => '0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'euxusin'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'taskmanageryii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=oo6kcpgtjgnbcucjted5hj3ijmi7on5o; _csrf=0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP-7.1\\ext;d:\\ospanel\\modules\\php\\PHP-7.1\\pear;d:\\ospanel\\modules\\php\\PHP-7.1\\pear\\bin;d:\\ospanel\\modules\\php\\PHP-7.1;d:\\ospanel\\modules\\imagemagick;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MySQL-5.6\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskmanageryii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web/index.php'
+    'REMOTE_PORT' => '8781'
+    'REDIRECT_URL' => '/task'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/task'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1510496176.533
+    'REQUEST_TIME' => 1510496176
+    'argv' => []
+    'argc' => 0
+]
+2017-11-12 17:19:02 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: task/view in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#1 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('task/view', Array)
+#2 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\OSPanel\WebServer\domains\taskmanageryii\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OSPanel\WebServer\domains\taskmanageryii\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-11-12 17:19:02 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][info][application] $_COOKIE = [
+    'PHPSESSID' => 'oo6kcpgtjgnbcucjted5hj3ijmi7on5o'
+    '_csrf' => '0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'euxusin'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'taskmanageryii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=oo6kcpgtjgnbcucjted5hj3ijmi7on5o; _csrf=0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP-7.1\\ext;d:\\ospanel\\modules\\php\\PHP-7.1\\pear;d:\\ospanel\\modules\\php\\PHP-7.1\\pear\\bin;d:\\ospanel\\modules\\php\\PHP-7.1;d:\\ospanel\\modules\\imagemagick;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MySQL-5.6\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskmanageryii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web/index.php'
+    'REMOTE_PORT' => '9127'
+    'REDIRECT_URL' => '/task/view'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/task/view'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1510496342.294
+    'REQUEST_TIME' => 1510496342
+    'argv' => []
+    'argc' => 0
+]
+2017-11-12 17:19:08 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Please specify the "model" property. in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\widgets\DetailView.php:131
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\BaseObject.php(108): yii\widgets\DetailView->init()
+#1 [internal function]: yii\base\BaseObject->__construct(Array)
+#2 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\di\Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#3 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#4 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#5 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Widget.php(137): yii\BaseYii::createObject(Array)
+#6 D:\OSPanel\WebServer\domains\taskmanageryii\views\task\index.php(29): yii\base\Widget::widget(Array)
+#7 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\View.php(332): require('D:\\OSPanel\\WebS...')
+#8 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\OSPanel\\WebS...', Array)
+#9 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\OSPanel\\WebS...', Array, Object(app\controllers\TaskController))
+#10 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\TaskController))
+#11 D:\OSPanel\WebServer\domains\taskmanageryii\controllers\TaskController.php(9): yii\base\Controller->render('index')
+#12 [internal function]: app\controllers\TaskController->actionIndex()
+#13 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#16 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('task', Array)
+#17 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 D:\OSPanel\WebServer\domains\taskmanageryii\web\index.php(12): yii\base\Application->run()
+#19 {main}
+2017-11-12 17:19:08 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][info][application] $_COOKIE = [
+    'PHPSESSID' => 'oo6kcpgtjgnbcucjted5hj3ijmi7on5o'
+    '_csrf' => '0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'euxusin'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'taskmanageryii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=oo6kcpgtjgnbcucjted5hj3ijmi7on5o; _csrf=0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP-7.1\\ext;d:\\ospanel\\modules\\php\\PHP-7.1\\pear;d:\\ospanel\\modules\\php\\PHP-7.1\\pear\\bin;d:\\ospanel\\modules\\php\\PHP-7.1;d:\\ospanel\\modules\\imagemagick;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MySQL-5.6\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskmanageryii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web/index.php'
+    'REMOTE_PORT' => '9131'
+    'REDIRECT_URL' => '/task'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/task'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1510496348.534
+    'REQUEST_TIME' => 1510496348
+    'argv' => []
+    'argc' => 0
+]
+2017-11-12 17:20:04 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: task/view in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#1 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('task/view', Array)
+#2 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\OSPanel\WebServer\domains\taskmanageryii\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OSPanel\WebServer\domains\taskmanageryii\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-11-12 17:20:04 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][info][application] $_COOKIE = [
+    'PHPSESSID' => 'oo6kcpgtjgnbcucjted5hj3ijmi7on5o'
+    '_csrf' => '0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'euxusin'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'taskmanageryii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=oo6kcpgtjgnbcucjted5hj3ijmi7on5o; _csrf=0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP-7.1\\ext;d:\\ospanel\\modules\\php\\PHP-7.1\\pear;d:\\ospanel\\modules\\php\\PHP-7.1\\pear\\bin;d:\\ospanel\\modules\\php\\PHP-7.1;d:\\ospanel\\modules\\imagemagick;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MySQL-5.6\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskmanageryii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web/index.php'
+    'REMOTE_PORT' => '9248'
+    'REDIRECT_URL' => '/task/view'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/task/view'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1510496404.062
+    'REQUEST_TIME' => 1510496404
+    'argv' => []
+    'argc' => 0
+]
+2017-11-12 17:21:11 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: task/view in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#1 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('task/view', Array)
+#2 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\OSPanel\WebServer\domains\taskmanageryii\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OSPanel\WebServer\domains\taskmanageryii\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-11-12 17:21:11 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][info][application] $_COOKIE = [
+    'PHPSESSID' => 'oo6kcpgtjgnbcucjted5hj3ijmi7on5o'
+    '_csrf' => '0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'euxusin'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'taskmanageryii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=oo6kcpgtjgnbcucjted5hj3ijmi7on5o; _csrf=0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP-7.1\\ext;d:\\ospanel\\modules\\php\\PHP-7.1\\pear;d:\\ospanel\\modules\\php\\PHP-7.1\\pear\\bin;d:\\ospanel\\modules\\php\\PHP-7.1;d:\\ospanel\\modules\\imagemagick;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MySQL-5.6\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskmanageryii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web/index.php'
+    'REMOTE_PORT' => '9421'
+    'REDIRECT_URL' => '/task/view'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/task/view'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1510496471.831
+    'REQUEST_TIME' => 1510496471
+    'argv' => []
+    'argc' => 0
+]
+2017-11-12 17:21:39 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Please specify the "model" property. in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\widgets\DetailView.php:131
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\BaseObject.php(108): yii\widgets\DetailView->init()
+#1 [internal function]: yii\base\BaseObject->__construct(Array)
+#2 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\di\Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#3 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#4 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#5 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Widget.php(137): yii\BaseYii::createObject(Array)
+#6 D:\OSPanel\WebServer\domains\taskmanageryii\views\task\view.php(29): yii\base\Widget::widget(Array)
+#7 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\View.php(332): require('D:\\OSPanel\\WebS...')
+#8 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\OSPanel\\WebS...', Array)
+#9 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\OSPanel\\WebS...', Array, Object(app\controllers\TaskController))
+#10 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('view', Array, Object(app\controllers\TaskController))
+#11 D:\OSPanel\WebServer\domains\taskmanageryii\controllers\TaskController.php(14): yii\base\Controller->render('view')
+#12 [internal function]: app\controllers\TaskController->actionView()
+#13 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#16 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('task/view', Array)
+#17 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 D:\OSPanel\WebServer\domains\taskmanageryii\web\index.php(12): yii\base\Application->run()
+#19 {main}
+2017-11-12 17:21:39 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][info][application] $_COOKIE = [
+    'PHPSESSID' => 'oo6kcpgtjgnbcucjted5hj3ijmi7on5o'
+    '_csrf' => '0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'euxusin'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'taskmanageryii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=oo6kcpgtjgnbcucjted5hj3ijmi7on5o; _csrf=0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP-7.1\\ext;d:\\ospanel\\modules\\php\\PHP-7.1\\pear;d:\\ospanel\\modules\\php\\PHP-7.1\\pear\\bin;d:\\ospanel\\modules\\php\\PHP-7.1;d:\\ospanel\\modules\\imagemagick;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MySQL-5.6\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskmanageryii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web/index.php'
+    'REMOTE_PORT' => '9486'
+    'REDIRECT_URL' => '/task/view'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/task/view'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1510496499.932
+    'REQUEST_TIME' => 1510496499
+    'argv' => []
+    'argc' => 0
+]
+2017-11-12 17:22:45 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: task/update in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('update', Array)
+#1 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('task/update', Array)
+#2 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\OSPanel\WebServer\domains\taskmanageryii\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OSPanel\WebServer\domains\taskmanageryii\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-11-12 17:22:45 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][info][application] $_COOKIE = [
+    'PHPSESSID' => 'oo6kcpgtjgnbcucjted5hj3ijmi7on5o'
+    '_csrf' => '0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'euxusin'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'taskmanageryii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://taskmanageryii/task/view'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=oo6kcpgtjgnbcucjted5hj3ijmi7on5o; _csrf=0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP-7.1\\ext;d:\\ospanel\\modules\\php\\PHP-7.1\\pear;d:\\ospanel\\modules\\php\\PHP-7.1\\pear\\bin;d:\\ospanel\\modules\\php\\PHP-7.1;d:\\ospanel\\modules\\imagemagick;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MySQL-5.6\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskmanageryii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web/index.php'
+    'REMOTE_PORT' => '9603'
+    'REDIRECT_URL' => '/task/update'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/task/update'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1510496565.508
+    'REQUEST_TIME' => 1510496565
+    'argv' => []
+    'argc' => 0
+]
+2017-11-12 17:28:44 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\web\Controller.php:149
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#3 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('task/view', Array)
+#4 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 D:\OSPanel\WebServer\domains\taskmanageryii\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2017-11-12 17:28:44 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][info][application] $_COOKIE = [
+    'PHPSESSID' => 'oo6kcpgtjgnbcucjted5hj3ijmi7on5o'
+    '_csrf' => '0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'euxusin'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'taskmanageryii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=oo6kcpgtjgnbcucjted5hj3ijmi7on5o; _csrf=0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP-7.1\\ext;d:\\ospanel\\modules\\php\\PHP-7.1\\pear;d:\\ospanel\\modules\\php\\PHP-7.1\\pear\\bin;d:\\ospanel\\modules\\php\\PHP-7.1;d:\\ospanel\\modules\\imagemagick;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MySQL-5.6\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskmanageryii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web/index.php'
+    'REMOTE_PORT' => '10378'
+    'REDIRECT_URL' => '/task/view'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/task/view'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1510496924.45
+    'REQUEST_TIME' => 1510496924
+    'argv' => []
+    'argc' => 0
+]
+2017-11-12 17:29:22 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "task/view/1". in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('task/view/1', Array)
+#1 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OSPanel\WebServer\domains\taskmanageryii\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OSPanel\WebServer\domains\taskmanageryii\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-11-12 17:29:22 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][info][application] $_COOKIE = [
+    'PHPSESSID' => 'oo6kcpgtjgnbcucjted5hj3ijmi7on5o'
+    '_csrf' => '0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'euxusin'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'taskmanageryii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=oo6kcpgtjgnbcucjted5hj3ijmi7on5o; _csrf=0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP-7.1\\ext;d:\\ospanel\\modules\\php\\PHP-7.1\\pear;d:\\ospanel\\modules\\php\\PHP-7.1\\pear\\bin;d:\\ospanel\\modules\\php\\PHP-7.1;d:\\ospanel\\modules\\imagemagick;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MySQL-5.6\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskmanageryii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web/index.php'
+    'REMOTE_PORT' => '10492'
+    'REDIRECT_URL' => '/task/view/1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/task/view/1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1510496962.447
+    'REQUEST_TIME' => 1510496962
+    'argv' => []
+    'argc' => 0
+]
+2017-11-12 17:29:53 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\web\Controller.php:149
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#3 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('task/view', Array)
+#4 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 D:\OSPanel\WebServer\domains\taskmanageryii\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2017-11-12 17:29:53 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][info][application] $_COOKIE = [
+    'PHPSESSID' => 'oo6kcpgtjgnbcucjted5hj3ijmi7on5o'
+    '_csrf' => '0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'euxusin'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'taskmanageryii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=oo6kcpgtjgnbcucjted5hj3ijmi7on5o; _csrf=0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP-7.1\\ext;d:\\ospanel\\modules\\php\\PHP-7.1\\pear;d:\\ospanel\\modules\\php\\PHP-7.1\\pear\\bin;d:\\ospanel\\modules\\php\\PHP-7.1;d:\\ospanel\\modules\\imagemagick;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MySQL-5.6\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskmanageryii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web/index.php'
+    'REMOTE_PORT' => '10522'
+    'REDIRECT_URL' => '/task/view'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/task/view'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1510496993.438
+    'REQUEST_TIME' => 1510496993
+    'argv' => []
+    'argc' => 0
+]
+2017-11-12 17:29:56 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "task/view/1". in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('task/view/1', Array)
+#1 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OSPanel\WebServer\domains\taskmanageryii\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OSPanel\WebServer\domains\taskmanageryii\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-11-12 17:29:56 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][info][application] $_COOKIE = [
+    'PHPSESSID' => 'oo6kcpgtjgnbcucjted5hj3ijmi7on5o'
+    '_csrf' => '0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'euxusin'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'taskmanageryii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=oo6kcpgtjgnbcucjted5hj3ijmi7on5o; _csrf=0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP-7.1\\ext;d:\\ospanel\\modules\\php\\PHP-7.1\\pear;d:\\ospanel\\modules\\php\\PHP-7.1\\pear\\bin;d:\\ospanel\\modules\\php\\PHP-7.1;d:\\ospanel\\modules\\imagemagick;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MySQL-5.6\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskmanageryii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web/index.php'
+    'REMOTE_PORT' => '10521'
+    'REDIRECT_URL' => '/task/view/1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/task/view/1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1510496996.342
+    'REQUEST_TIME' => 1510496996
+    'argv' => []
+    'argc' => 0
+]
+2017-11-12 17:29:58 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\web\Controller.php:149
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#3 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('task/view', Array)
+#4 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 D:\OSPanel\WebServer\domains\taskmanageryii\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2017-11-12 17:29:58 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][info][application] $_COOKIE = [
+    'PHPSESSID' => 'oo6kcpgtjgnbcucjted5hj3ijmi7on5o'
+    '_csrf' => '0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'euxusin'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'taskmanageryii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=oo6kcpgtjgnbcucjted5hj3ijmi7on5o; _csrf=0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP-7.1\\ext;d:\\ospanel\\modules\\php\\PHP-7.1\\pear;d:\\ospanel\\modules\\php\\PHP-7.1\\pear\\bin;d:\\ospanel\\modules\\php\\PHP-7.1;d:\\ospanel\\modules\\imagemagick;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MySQL-5.6\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskmanageryii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web/index.php'
+    'REMOTE_PORT' => '10547'
+    'REDIRECT_URL' => '/task/view'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/task/view'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1510496998.312
+    'REQUEST_TIME' => 1510496998
+    'argv' => []
+    'argc' => 0
+]
+2017-11-12 17:30:21 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "task/view/1". in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('task/view/1', Array)
+#1 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OSPanel\WebServer\domains\taskmanageryii\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OSPanel\WebServer\domains\taskmanageryii\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-11-12 17:30:21 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][info][application] $_COOKIE = [
+    'PHPSESSID' => 'oo6kcpgtjgnbcucjted5hj3ijmi7on5o'
+    '_csrf' => '0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'euxusin'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'taskmanageryii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=oo6kcpgtjgnbcucjted5hj3ijmi7on5o; _csrf=0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP-7.1\\ext;d:\\ospanel\\modules\\php\\PHP-7.1\\pear;d:\\ospanel\\modules\\php\\PHP-7.1\\pear\\bin;d:\\ospanel\\modules\\php\\PHP-7.1;d:\\ospanel\\modules\\imagemagick;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MySQL-5.6\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskmanageryii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web/index.php'
+    'REMOTE_PORT' => '10599'
+    'REDIRECT_URL' => '/task/view/1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/task/view/1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1510497021.148
+    'REQUEST_TIME' => 1510497021
+    'argv' => []
+    'argc' => 0
+]
+2017-11-12 17:30:33 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\web\Controller.php:149
+Stack trace:
+#0 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#3 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('task/view', Array)
+#4 D:\OSPanel\WebServer\domains\taskmanageryii\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 D:\OSPanel\WebServer\domains\taskmanageryii\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2017-11-12 17:30:33 [127.0.0.1][-][oo6kcpgtjgnbcucjted5hj3ijmi7on5o][info][application] $_COOKIE = [
+    'PHPSESSID' => 'oo6kcpgtjgnbcucjted5hj3ijmi7on5o'
+    '_csrf' => '0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'euxusin'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'taskmanageryii'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=oo6kcpgtjgnbcucjted5hj3ijmi7on5o; _csrf=0ec459cd7bbfd61f6a469d4159ca8b24fc1b4ab8fb13f4e34abd64bd12e5d607a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DUSI1q1T-R1_oWR2E-AJlEBnpxdEemcG%22%3B%7D'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP-7.1\\ext;d:\\ospanel\\modules\\php\\PHP-7.1\\pear;d:\\ospanel\\modules\\php\\PHP-7.1\\pear\\bin;d:\\ospanel\\modules\\php\\PHP-7.1;d:\\ospanel\\modules\\imagemagick;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MySQL-5.6\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7\\bin;d:\\ospanel\\modules\\http\\Apache-PHP-7;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskmanageryii'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/WebServer/domains/taskmanageryii/web/index.php'
+    'REMOTE_PORT' => '10599'
+    'REDIRECT_URL' => '/task/view'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/task/view'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1510497033.862
+    'REQUEST_TIME' => 1510497033
+    'argv' => []
+    'argc' => 0
+]
