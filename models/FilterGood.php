@@ -63,25 +63,25 @@ class FilterGood {
 
 
 //    Получает массив с уникальными значениями из столбца с шапкой $header
-    protected function uniqueValues($data, $header) {
-
+    public function uniqueValues($data, $header) {
+        $uniqueDataIDs = array();
         foreach ($data as $string) {
-            $this->uniqueDataIDs[$string[$header]] = $string[$header];
+            $uniqueDataIDs[$string[$header]] = $string[$header];
         }
 
-        $this->uniqueDataIDs = array_unique($this->uniqueDataIDs);
+        $uniqueDataIDs = array_unique($uniqueDataIDs);
 
-        return $this->uniqueDataIDs;
+        return $uniqueDataIDs;
     }
 
 
 //    Выводит массив со сгруппированными данными
     public function groupCharacters($data, $header) {
 
-        $this->uniqueValues($data, $header);
+        $uniqueDataIDs = $this->uniqueValues($data, $header);
         $headers = $this->getHeader();
 
-        foreach ($this->uniqueDataIDs as $item) {
+        foreach ($uniqueDataIDs as $item) {
             $NumberOfVariety = 1;
             foreach ($data as $string) {
                 if ($item == $string[$header]) {
@@ -95,6 +95,5 @@ class FilterGood {
 
         return $this->goodsGrouped;
     }
-
 
 }

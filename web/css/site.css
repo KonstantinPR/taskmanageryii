@@ -3,6 +3,10 @@ body {
     height: 100%;
 }
 
+.form-group-button {
+    padding: 0px;
+}
+
 #ex1Slider .slider-selection {
     background: #BABABA;
 }
@@ -32,7 +36,7 @@ body {
 
 .jumbotron .btn {
     font-size: 14px;
-    width:100%;
+    width: 100%;
 }
 
 .not-set {
@@ -100,9 +104,9 @@ a.desc:after {
     border: none;
 }
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
     .nav li > form > button.logout {
-        display:block;
+        display: block;
         text-align: left;
         width: 100%;
         padding: 10px 15px;

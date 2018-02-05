@@ -2,7 +2,10 @@
 
 namespace app\controllers;
 
+use app\models\FilterForm;
+use app\models\FilterGood;
 use app\models\Task;
+use app\models\Formatter;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -10,6 +13,7 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use moonland\phpexcel\Excel;
 
 class SiteController extends Controller {
 
@@ -59,14 +63,33 @@ class SiteController extends Controller {
      * @return string
      */
     public function actionIndex() {
+
+
         $this->layout = 'pattern';
-        return $this->render('index', ['model' => Task::getDb()]);
+        $model = new FilterForm();
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+
+            $fileName = "../views/site/price.xls";
+            $data = \moonland\phpexcel\Excel::import($fileName); // $config is an optional
+            $dataUniqueID = new FilterGood($data);
+
+            Formatter::spaceRemover($model, ['stringItems', 'stringSizes']);
+            $filterArray = Formatter::toFilterArray($model);
+
+            $filterData = $dataUniqueID->filteringData($data, $filterArray);
+
+            return $this->render('pattern', ['filterData' => $filterData]);
+        } else {
+
+            $fileName = "../views/site/price.xls";
+            $data = Excel::import($fileName); // $config is an optional
+            $dataUniqueID = new FilterGood($data);
+            $uniqueIDs = $dataUniqueID->uniqueValues($data, 'Categories (xyz..)');
+
+            return $this->render('index', ['model' => $model, 'uniqueIDs' => $uniqueIDs]);
+        }
     }
 
-    public function actionTable() {
-        $this->layout = 'pattern';
-        return $this->render('table');
-    }
 
     /**
      * Login action.
@@ -86,6 +109,12 @@ class SiteController extends Controller {
             'model' => $model,
         ]);
     }
+
+
+    public function actionPattern() {
+        return $this->render('pattern');
+    }
+
 
     /**
      * Logout action.
