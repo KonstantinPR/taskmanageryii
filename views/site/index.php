@@ -3,12 +3,10 @@
 /* @var $this yii\web\View */
 
 use yii\helpers\Html;
-use yii\helpers\Url;
 use yii\widgets\ActiveForm;
 
-$this->title = 'My Yii Application';
+$this->title = 'Pattern';
 ?>
-
 
 
 <div class="site-index">
@@ -25,17 +23,14 @@ $this->title = 'My Yii Application';
                 <?= $form->field($model, 'groupGoods')->dropDownList($uniqueIDs)->label(false) ?>
             </div>
             <div class="form-group col-md-6">
-                    <?= $form->field($model, 'stringItems')->label(false) ?>
+                <?= $form->field($model, 'stringItems')->label(false)->textInput(['placeholder' => 'Фильтр по артикулам - через запятую']) ?>
             </div>
             <div class="form-group col-md-6">
-                <?= $form->field($model, 'stringSizes')->label(false) ?>
+                <?= $form->field($model, 'stringSizes')->label(false)->textInput(['placeholder' => 'Фильтр по размерам - через запятую']) ?>
             </div>
-<!--            <div class="form-group col-md-12">-->
-<!--                --><?//= $form->field($model, 'onlySale')->label(false)->checkbox(['Вывести распродажные модели']) ?>
-<!--            </div>-->
-<!--            <div class="form-group col-md-12">-->
-<!--                --><?//= $form->field($model, 'unSale')->label(false)->checkbox(['Вывести распродажные модели']) ?>
-<!--            </div>-->
+            <div class="form-group col-md-6">
+                <?= $form->field($model, 'color')->label(false)->textInput(['placeholder' => 'Цвет']) ?>
+            </div>
 
             <?php ActiveForm::end(); ?>
         </div>

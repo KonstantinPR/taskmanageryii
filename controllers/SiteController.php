@@ -3,8 +3,7 @@
 namespace app\controllers;
 
 use app\models\FilterForm;
-use app\models\FilterGood;
-use app\models\Task;
+use app\models\FilterItem;
 use app\models\Formatter;
 use Yii;
 use yii\filters\AccessControl;
@@ -66,27 +65,28 @@ class SiteController extends Controller {
 
 
         $this->layout = 'pattern';
+        $fileName = "../views/site/price.xls";
+        $data = Excel::import($fileName); // $config is an optional
+        $dataUniqueID = new FilterItem($data);
         $model = new FilterForm();
+
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-
-            $fileName = "../views/site/price.xls";
-            $data = \moonland\phpexcel\Excel::import($fileName); // $config is an optional
-            $dataUniqueID = new FilterGood($data);
-
-            Formatter::spaceRemover($model, ['stringItems', 'stringSizes']);
+            //Не забыдь поставить массив вместо строк
+            Formatter::spaceRemover($model, ['stringItems', 'stringSizes', 'color']);
             $filterArray = Formatter::toFilterArray($model);
+            $filterArrayNoEmpty = Formatter::deleteEmptyItemsArray($filterArray);
+            $filterData = $dataUniqueID->filteringData($data, $filterArrayNoEmpty);
+            $group = $dataUniqueID->groupCharacters($filterData, 'ID');
+//            var_dump($filterData);
+//            die;
 
-            $filterData = $dataUniqueID->filteringData($data, $filterArray);
+            return $this->render('pattern', ['group' => $group, 'data' => $data]);
 
-            return $this->render('pattern', ['filterData' => $filterData]);
         } else {
-
-            $fileName = "../views/site/price.xls";
-            $data = Excel::import($fileName); // $config is an optional
-            $dataUniqueID = new FilterGood($data);
             $uniqueIDs = $dataUniqueID->uniqueValues($data, 'Categories (xyz..)');
 
             return $this->render('index', ['model' => $model, 'uniqueIDs' => $uniqueIDs]);
+
         }
     }
 

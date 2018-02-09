@@ -10,12 +10,11 @@
 
 namespace app\models;
 
-use phpDocumentor\Reflection\Types\Array_;
 
 class Formatter {
 
 
-    // Удаляет пробелы из переданной строки
+    // Удаляет пробелы из переданной строки и разделяет по запятым в массив
     public static function spaceRemover(FilterForm $model, Array $strings) {
         $stringNoSpace = array();
         foreach ($strings as $string => $value) {
@@ -33,21 +32,24 @@ class Formatter {
 
 
     // Преобразовывает модель, полученную из формы в массив,
-    // содержащий только поля фильтра (свойства класса)
+    // преобразовывая ключи в значения полученные от пользователя
     public static function toFilterArray($model) {
 
+        //Соответствие названий полей формы с полями таблицы. Вынести в константы!!!
         $accords = [
             'groupGoods' => 'Categories (xyz..)',
             'stringItems' => 'ID',
-            'stringSizes' => 'Size'
+            'stringSizes' => 'Size',
+            'color' => 'Color'
         ];
 
+        //
         $modelProperties = get_class_vars(get_class($model));
         $filterArray = array();
 
         foreach ($modelProperties as $modelProperty => $value) {
-            foreach ($accords as $modelProperty => $excelHeader) {
-                if ($modelProperty == $modelProperty) {
+            foreach ($accords as $accord => $excelHeader) {
+                if ($modelProperty == $accord) {
                     $filterArray[$excelHeader] = $model->$modelProperty;
                 }
             }
@@ -55,6 +57,25 @@ class Formatter {
 
         return $filterArray;
 
+    }
+
+
+    //Удаление пустых элементов массива, в т.ч. двумерных, присланных из формы
+    public static function deleteEmptyItemsArray(Array $filterArray) {
+
+        foreach ($filterArray as $key => $value) {
+            if (is_array($value)) {
+                foreach ($value as $items => $item) {
+                    if ($item == '') {
+                        unset($filterArray[$key]);
+                    }
+                }
+            } elseif ($value == '') {
+                unset($filterArray[$key]);
+            }
+        }
+
+        return $filterArray;
     }
 
 
