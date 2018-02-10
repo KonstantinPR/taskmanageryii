@@ -14,7 +14,7 @@ $this->title = 'Pattern';
     <div class="jumbotron">
 
         <div class="form-row">
-            <?php $form = ActiveForm::begin(); ?>
+            <?php $form = ActiveForm::begin(['options'=>['target'=>'_blank']]); ?>
 
             <div class="form-group col-md-6">
                 <?= Html::submitButton("Сформировать", ['class' => 'btn btn-success']) ?>

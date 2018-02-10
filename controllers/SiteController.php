@@ -64,13 +64,14 @@ class SiteController extends Controller {
     public function actionIndex() {
 
 
-        $this->layout = 'pattern';
+
         $fileName = "../views/site/price.xls";
         $data = Excel::import($fileName); // $config is an optional
         $dataUniqueID = new FilterItem($data);
         $model = new FilterForm();
 
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            $this->layout = 'catalog';
             //Не забыдь поставить массив вместо строк
             Formatter::spaceRemover($model, ['stringItems', 'stringSizes', 'color']);
             $filterArray = Formatter::toFilterArray($model);
@@ -81,6 +82,7 @@ class SiteController extends Controller {
             return $this->render('pattern', ['group' => $group]);
 
         } else {
+            $this->layout = 'pattern';
             $uniqueIDs = $dataUniqueID->uniqueValues($data, 'Categories (xyz..)');
 
             return $this->render('index', ['model' => $model, 'uniqueIDs' => $uniqueIDs]);
