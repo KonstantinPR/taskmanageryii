@@ -8,8 +8,6 @@
 
 namespace app\models;
 
-use moonland\phpexcel\Excel;
-use phpDocumentor\Reflection\Types\Array_;
 
 class FilterItem {
 
@@ -75,7 +73,8 @@ class FilterItem {
     }
 
 
-//    Выводит массив со сгруппированными данными
+    // Выводит массив со сгруппированными данными
+    // с 10.02.2018 - не актуален
     public function groupCharacters($data, $header) {
 
         $uniqueDataIDs = $this->uniqueValues($data, $header);
@@ -94,6 +93,44 @@ class FilterItem {
         }
 
         return $this->goodsGrouped;
+    }
+
+
+    // Подготавливает массив для выдачи в вид - он содержит
+    // в себе многомерный массив готовый к передаче в вид
+    // с 10.02.2018 - не актуален
+    public function filterArray($data) {
+        $group = array();
+        foreach ($data as $array => $section) {
+            foreach ($section as $key => $value) {
+                empty($group[$section['ID']][$section['Color']][$key]) ? $separator = '' : $separator = ', ';
+                if ($key == 'Size') {
+                    $group[$section['ID']][$section['Color']][$key] = $group[$section['ID']][$section['Color']][$key] . $separator . $section['Size'];
+                } else {
+                    $group[$section['ID']][$section['Color']][$key] = $section[$key];
+                }
+
+            }
+        }
+        return $group;
+    }
+
+
+    public function filterArray2($data) {
+        $group = array();
+        foreach ($data as $array => $section) {
+            foreach ($section as $key => $value) {
+                if ($key == 'Size') {
+                    empty($group[$section['Name *'] . $section['Color'] . $section['Wholesale price']][$key]) ? $separator = '' : $separator = ', ';
+                    $group[$section['Name *'] . $section['Color'] . $section['Wholesale price']][$key] = $group[$section['Name *'] . $section['Color'] . $section['Wholesale price']][$key] . $separator . $section['Size'];
+                } else {
+                    $group[$section['Name *'] . $section['Color'] . $section['Wholesale price']][$key] = $section[$key];
+                }
+            }
+        }
+
+
+        return $group;
     }
 
 }

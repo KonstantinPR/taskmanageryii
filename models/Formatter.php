@@ -14,6 +14,7 @@ namespace app\models;
 class Formatter {
 
 
+    // Получает данные из формы
     // Удаляет пробелы из переданной строки и разделяет по запятым в массив
     public static function spaceRemover(FilterForm $model, Array $strings) {
         $stringNoSpace = array();
@@ -60,7 +61,7 @@ class Formatter {
     }
 
 
-    //Удаление пустых элементов массива, в т.ч. двумерных, присланных из формы
+    //Удаление пустых элементов массива, в т.ч. двумерных, присланных из формы, т.е. пустых полей формы
     public static function deleteEmptyItemsArray(Array $filterArray) {
 
         foreach ($filterArray as $key => $value) {

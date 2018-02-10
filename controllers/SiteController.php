@@ -76,11 +76,9 @@ class SiteController extends Controller {
             $filterArray = Formatter::toFilterArray($model);
             $filterArrayNoEmpty = Formatter::deleteEmptyItemsArray($filterArray);
             $filterData = $dataUniqueID->filteringData($data, $filterArrayNoEmpty);
-            $group = $dataUniqueID->groupCharacters($filterData, 'ID');
-//            var_dump($filterData);
-//            die;
+            $group = $dataUniqueID->filterArray2($filterData);
 
-            return $this->render('pattern', ['group' => $group, 'data' => $data]);
+            return $this->render('pattern', ['group' => $group]);
 
         } else {
             $uniqueIDs = $dataUniqueID->uniqueValues($data, 'Categories (xyz..)');
