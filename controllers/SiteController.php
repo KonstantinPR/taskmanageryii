@@ -5,6 +5,7 @@ namespace app\controllers;
 use app\models\FilterForm;
 use app\models\FilterItem;
 use app\models\Formatter;
+use kartik\mpdf\Pdf;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -64,7 +65,6 @@ class SiteController extends Controller {
     public function actionIndex() {
 
 
-
         $fileName = "../views/site/price.xls";
         $data = Excel::import($fileName); // $config is an optional
         $dataUniqueID = new FilterItem($data);
@@ -88,6 +88,85 @@ class SiteController extends Controller {
             return $this->render('index', ['model' => $model, 'uniqueIDs' => $uniqueIDs]);
 
         }
+    }
+
+
+
+
+
+    public function actionReport() {
+
+
+        $fileName = "../views/site/price.xls";
+        $data = Excel::import($fileName); // $config is an optional
+        $dataUniqueID = new FilterItem($data);
+        $model = new FilterForm();
+
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            $this->layout = 'pdfcatalog';
+            //Не забыдь поставить массив вместо строк
+            Formatter::spaceRemover($model, ['stringItems', 'stringSizes', 'color']);
+            $filterArray = Formatter::toFilterArray($model);
+            $filterArrayNoEmpty = Formatter::deleteEmptyItemsArray($filterArray);
+            $filterData = $dataUniqueID->filteringData($data, $filterArrayNoEmpty);
+            $group = $dataUniqueID->filterArray2($filterData);
+
+
+
+            // get your HTML raw content without any layouts or scripts
+            $content= $this->render('pdfcatalog', ['group' => $group]);
+
+
+            // setup kartik\mpdf\Pdf component
+            $pdf = new Pdf([
+                // set to use core fonts only
+                'mode' => Pdf::MODE_CORE,
+                // A4 paper format
+                'format' => Pdf::FORMAT_A4,
+                // portrait orientation
+                'orientation' => Pdf::ORIENT_PORTRAIT,
+                // stream to browser inline
+                'destination' => Pdf::DEST_BROWSER,
+                // your html content input
+                'content' => $content,
+                // format content from your own css file if needed or use the
+                // enhanced bootstrap css built by Krajee for mPDF formatting
+                'cssFile' => '@vendor/kartik-v/yii2-mpdf/assets/kv-mpdf-bootstrap.min.css',
+                // any css to be embedded if required
+                'cssInline' => '.kv-heading-1{font-size:18px}',
+                // set mPDF properties on the fly
+                'options' => ['title' => 'Krajee Report Title'],
+                // call mPDF methods on the fly
+                'methods' => [
+                    'SetHeader'=>['Krajee Report Header'],
+                    'SetFooter'=>['{PAGENO}'],
+                ]
+            ]);
+
+            // return the pdf output as per the destination setting
+            return $pdf->render();
+
+
+
+        } else {
+            $this->layout = 'pattern';
+            $uniqueIDs = $dataUniqueID->uniqueValues($data, 'Categories (xyz..)');
+
+            return $this->render('index', ['model' => $model, 'uniqueIDs' => $uniqueIDs]);
+
+        }
+
+
+
+
+
+
+    }
+
+
+    public function actionOne($fullImage, $nameID) {
+        $this->layout = 'img';
+        return $this->render('img', ['fullImage' => $fullImage, 'nameID' => $nameID]);
     }
 
 
